@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Etch a sketch</title>
+  </head>
+  <body>
+    <h1>SketchPad</h1>
+    <p>
+      Mode: <span id="modeColor">not coloring</span><span id="colorType"></span>
+    </p>
+    <span><strong>CLICK TO START</strong></span>
+    <p>The Color Selected is <span id="colorSelected"></span></p>
+    <main id="main"></main>
+    <div class="btns">
+      <button onclick="changeColor('black')" id="btnBlack">Black</button>
+      <button onclick="changeColor('white')" id="btnErazor">Erazor</button>
+      <button onclick="changeColor('gray')" id="btnGray">Gray</button>
+      <button onclick="changeColor('random')" id="btnRandom">Random</button>
+      <button onclick="resetColor()" id="btnReset">Reset</button>
+    </div>
+    <form>
+      <input
+        type="number"
+        name="number"
+        id="numberGrid"
+        onchange="changeSize(this.value)"
+      />
+      <button id="btnSetsize">Set Size</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

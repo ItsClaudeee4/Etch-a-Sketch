@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  text-align: center;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: cadetblue;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+#colorSelected {
+  font-weight: bold;
+  font-size: 20px;
+}
+#colorSelected.random {
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    /* Red */ #ff7f00,
+    /* Orange */ #ffff00,
+    /* Yellow */ #7fff00,
+    /* Chartreuse */ #00ff00,
+    /* Green */ #00ff7f,
+    /* Spring Green */ #00ffff,
+    /* Cyan */ #007fff,
+    /* Azure */ #0000ff,
+    /* Blue */ #7f00ff,
+    /* Violet */ #ff00ff,
+    /* Magenta */ #ff007f,
+    /* Rose */ #ff0000 /* Red again to close the loop */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For non-WebKit browsers */
+}
+main {
+  border: solid 1px black;
+  height: 60vh;
+  width: 60vh;
+  display: grid;
+  margin-top: 40px;
+}
+.btns {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+button {
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+button:hover {
+  opacity: 0.8;
+}
+#btnBlack {
+  background-color: black;
+  color: white;
+}
+#btnErazor {
+  border: solid 1px black;
+  background-color: white;
+}
+#btnGray {
+  border: solid 1px black;
+  background-color: rgb(150, 149, 149);
+}
+#btnRandom {
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    /* Red */ #ff7f00,
+    /* Orange */ #ffff00,
+    /* Yellow */ #7fff00,
+    /* Chartreuse */ #00ff00,
+    /* Green */ #00ff7f,
+    /* Spring Green */ #00ffff,
+    /* Cyan */ #007fff,
+    /* Azure */ #0000ff,
+    /* Blue */ #7f00ff,
+    /* Violet */ #ff00ff,
+    /* Magenta */ #ff007f,
+    /* Rose */ #ff0000 /* Red again to close the loop */
+  );
+}
+#btnReset {
+  border: solid 2px;
+}
+input {
+  border-radius: 15px;
+  border: solid 2px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
